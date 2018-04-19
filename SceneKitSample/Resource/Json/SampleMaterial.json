@@ -1,0 +1,9 @@
+{
+    "name" : "green_0",
+    "diffuse" : {
+                "contents" : {
+                            "type" : "color",
+                            "data" : {"rgba" : [0,1,0,1]}
+                            }
+    }
+}

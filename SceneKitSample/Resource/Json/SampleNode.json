@@ -1,0 +1,9 @@
+{
+    "name" : "child_23",
+    "transform" : {
+                "position" : {"x":0.0, "y":2.0, "z":0.0},
+                "eulerAngles" : {"x":45.0, "y":45.0, "z":45.0}
+                },
+    "geometry" : "unit_box",
+    "materials" : ["green_0"]
+}

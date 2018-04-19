@@ -1,0 +1,82 @@
+{
+    "background" : {
+        "contents" : {
+            "type" : "image",
+            "data" : {"cubemap" : ["left.jpg", "right.jpg", "top.jpg", "bottom.jpg", "front.jpg", "back.jpg"]}
+        }
+    },
+    
+    "node" : [{
+              "name" : "untitled",
+              "transform" : {
+                            "position" : {"x":0.0, "y":0.0, "z":0.0},
+                            "eulerAngles" : {"x":45.0, "y":45.0, "z":0.0},
+                            "scale" : {"x":1.0, "y":1.0, "z":1.0}
+              },
+              "geometry" : "unit_box",
+              "childNodes" : [{"named" : "SampleNode"},
+                              {
+                              "name" : "child_1",
+                              "transform" : {"position" : {"x":0.0, "y":-2.0, "z":0.0}},
+                              "geometry" : "unit_box",
+                              "childNodes" : [{
+                                              "name" : "child_0",
+                                              "transform" : {
+                                                            "position" : {"x":0.0, "y":0.0, "z":-2.0},
+                                                            "eulerAngles" : {"x":0.0, "y":45.0, "z":0.0}
+                                              },
+                                              "geometry" : "unit_box",
+                                              "materials" : ["blue_0"],
+                                              }]
+                              }],
+              "physicsBody" : {"type" : "static"},
+              "categoryBitMask" : 1,
+              "isHidden" : false,
+              "castsShadow" : false
+              }],
+    
+    "material" : [{
+                  "name" : "basic_0",
+                  "isDoubleSided" : false,
+                  "locksAmbientWithDiffuse" : true,
+                  "lightingModel" : null,
+                  "transparency" : 1.0,
+                  "diffuse" : {
+                            "contents" : {
+                                        "type" : "image",
+                                        "data" : {"named" : "checkerboard.jpg"}
+                                        },
+                            "intensity" : 1.0,
+                            "contentsTransform" : {
+                                                "position" : {"x":0.25, "y":-0.5, "z":0.0},
+                                                "eulerAngles" : {"x":0.0, "y":0.0, "z":22.5},
+                                                "scale" : {"x":1.0, "y":1.0, "z":1.0}
+                                                },
+                            "wrapS" : null,
+                            "wrapT" : null,
+                            "mappingChannel" : 0
+                            }
+                  },
+                  {
+                  "named" : "SampleMaterial"
+                  },
+                  {
+                  "name" : "blue_0",
+                  "diffuse" : {
+                            "contents" : {
+                                        "type" : "color",
+                                        "data" : {"rgba" : [0.3,0.3,1,1]}
+                                        }
+                            }
+                  }],
+    
+    "geometry" : [{
+                  "name" : "unit_box",
+                  "type" : "preset",
+                  "data" : {
+                            "primitive" : "SCNBox",
+                            "args" : {"width":1, "height":1, "length":1, "chamferRadius":0}
+                            },
+                  "materials" : ["basic_0"],
+                  }]
+}
