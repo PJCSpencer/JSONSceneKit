@@ -6,4 +6,4 @@
 </p>
 
 # About
-Lightweight Swift 4.0 framework used for creating SceneKit scenes using json. Uses <a href="https://developer.apple.com/videos/play/wwdc2015/408/" target="_blank">Swift POP</a> as a driving inspiration for it's design and development.
+Lightweight Swift 4.0 framework used for creating SceneKit scenes using json. Uses <a href="https://developer.apple.com/videos/play/wwdc2015/408/" target="_blank">Swift POP</a> as a driving inspiration for the design and development.
