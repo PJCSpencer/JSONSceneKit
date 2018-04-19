@@ -17,7 +17,7 @@ extension SCNNode
         case name
         case light, camera, geometry
         case childNodes
-        case transform, position, eulerAngles, scale
+        case transform, position, eulerAngles, scale, pivot
         case categoryBitMask
         case isHidden
         case castsShadow
@@ -38,6 +38,10 @@ extension SCNNode: JSONConfigurable
         if let data = jsonObject.JSONObject(SCNNode.Keys.transform.rawValue),
             let transform = SCNMatrix4.compile(jsonObject: data)
         { self.transform = transform }
+        
+        if let data = jsonObject.JSONObject(SCNNode.Keys.pivot.rawValue),
+            let v3 = SCNVector3.compile(jsonObject: data)
+        { self.pivot = SCNMatrix4.translation(v3) }
         
         if let data = jsonObject.JSONObject(SCNNode.Keys.physicsBody.rawValue),
             let geometry = self.geometry
