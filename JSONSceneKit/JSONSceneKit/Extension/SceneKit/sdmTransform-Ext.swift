@@ -52,6 +52,13 @@ extension SCNVector3: JSONCompilable
     }
 }
 
+// MARK:- Utility Extension(s)
+extension SCNMatrix4
+{
+    static func translation(_ v3: SCNVector3) -> SCNMatrix4
+    { return SCNMatrix4MakeTranslation(v3.x, v3.y, v3.z) }
+}
+
 // MARK: - SCNMatrix4 Protocol Support
 extension SCNMatrix4: JSONCompilable
 {
