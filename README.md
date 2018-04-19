@@ -2,7 +2,6 @@
 
 <p align="center">
   <img src="https://github.com/PJCSpencer/JSONSceneKit/blob/master/thumbnail.png" alt="JSONSceneKit Sample App"/>
-  A general-purpose, 2d node graph GUI using Qt.
 </p>
 
 # About
