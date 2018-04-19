@@ -1,7 +1,7 @@
 # JSONSceneKit
 
 <p align="center">
-  <img src="https://github.com/PJCSpencer/JSONSceneKit/blob/master/thumbnail.png" alt="JSONSceneKit Sample App"/>Screenshot of the included sample application.
+  <img src="https://github.com/PJCSpencer/JSONSceneKit/blob/master/thumbnail.png" alt="JSONSceneKit Sample App"/>Screenshot of the included sample app.
 </p>
 
 # About
