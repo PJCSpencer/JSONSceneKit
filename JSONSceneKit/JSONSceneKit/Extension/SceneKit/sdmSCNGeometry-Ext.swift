@@ -115,7 +115,8 @@ class SCNGeometryLibrary: Library, LibraryPassing
         
         for jsonObject in jsonCollection
         {
-            guard let keys = jsonObject[SCNGeometry.Keys.materials.rawValue] as? [String],
+            guard let jsonObject = JSONSerialization.compile(jsonObject: jsonObject),
+                let keys = jsonObject[SCNGeometry.Keys.materials.rawValue] as? [String],
                 let name = jsonObject[SCNGeometry.Keys.name.rawValue] as? String,
                 let geometry = self.cache[name] else
             { continue }
